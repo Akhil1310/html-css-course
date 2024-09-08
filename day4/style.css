@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    }
+    body >header{
+        background-color: white;
+    }
+    header{
+        text-align: center;
+    }
+    h1 {
+        color:#1a41d6
+    }
+    p {
+        margin-left: 1.5rem;
+    }
+    nav{
+        background-color:black;
+        margin: 2px;
+        text-align: center;
+
+    }
+    nav ul li{
+        list-style-type: none ;
+        color: white;
+        display: inline-block;
+        padding: 14px 12px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
+    }
+    nav ul li:hover{
+        border-radius: 0px;
+        text-align: center;
+        color: #7d8298; 
+        background-color: blue; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    nav ul li a {
+        
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        text-decoration: none;
+        transition: color 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    }
+    
+    nav ul li a::before {
+        content: '';
+        position: absolute;
+        bottom: -.5rem;
+        right: 0;
+        width: 0%;
+        background: #fff;
+        transition: .2s linear;
+    }
+    
+    nav ul li a.active::before,
+    nav ul li a:hover::before {
+        left: 0;
+        width: 100%;
+    }
+    h2{
+        margin-left: 1.5rem;
+        color:#1a41d6
+        
+    }
+    
+    section{
+        background-color: white ;
+        padding: 4px;
+        border-radius: 4px;
+        margin: 10px;
+    }
+    ul li{
+        padding: 0;
+    }
+
+    #curriculum ul{
+        display: flex;
+        padding: 6px;
+        gap: 10px;
+    }
+    #curriculum li{
+        list-style: none;
+        background-color:#f3f3f3;
+        padding: 8px;
+        border-radius:10px;
+    }
+    #curriculum ul li h2{
+        font-size: medium;
+        margin-left: 1.5rem;
+        color:#1a41d6
+        
+    }
+
+    .main-image{
+        position: relative;
+        background: url(https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png) no-repeat center;
+        background-color: rgb(53, 52, 52);
+        background-size: cover;
+        height: 308px;
+        overflow: hidden;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+    }
+    .container h1{
+        margin: 0;
+        font-size: 50px;
+        color: white;
+    }
+    .container h1 span{
+        padding: 6px 14px;
+        display: inline-block;
+    }
+    .cen{
+        margin: 20px;
+        display: block;
+        font-size: 15px;
+    }
+    .button{
+        color: white;
+        padding: 10px 24px;
+        background: blue;
+        text-decoration: none;
+        border-radius: 2px;
+        transition: .6s;
+    }
+    .button:hover{
+        
+        background-color: rgb(3, 3, 156);
+    }
